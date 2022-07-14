@@ -24,7 +24,7 @@ function App() {
         {/* getUrlParams */}
         <div>
           <h1>getUrlParams</h1>
-          <p>Patter: {pattern}</p>
+          <p>Pattern: {pattern}</p>
           {testCases.map((test) => (
             <div key={test}>
               <span>{test}</span>
