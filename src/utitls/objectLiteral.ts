@@ -11,8 +11,8 @@ export const objectLiteral = <T>(source: T, target: T) => {
 
     if (sourceValue !== targetValue) {
       result[key] = {
-        old: sourceValue || null,
-        new: targetValue || null,
+        old: sourceValue,
+        new: targetValue,
       };
     }
   });

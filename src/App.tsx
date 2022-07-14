@@ -39,7 +39,12 @@ function App() {
           <div>
             <p>Before: {JSON.stringify(before)}</p>
             <p>After: {JSON.stringify(after)}</p>
-            <p>Result: {JSON.stringify(objectLiteral(before, after))}</p>
+            <p>
+              Result:{" "}
+              {JSON.stringify(objectLiteral(before, after), (k, v) =>
+                v === undefined ? null : v
+              )}
+            </p>
           </div>
         </div>
       </header>
